@@ -1,0 +1,194 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="nl" lang="nl" xmlns:esro="http://toptix.com">
+<head>
+	<title>AB</title>
+	<link rel="favicon" src="/favicon.ico" />
+	<style type="text/css" media="screen">
+		body, form, ol, ul, dl, li, dt, dd, td, th ,tr, h1, h2, h3, h4, h5, h6, p, pre, blockquote, address{ margin: 0; padding: 0; }
+		html, body{ height: 100%; width: 100%; }
+		ol, ul{ list-style:none; }
+		img{ border: 0; }
+		fieldset{ margin: 0; padding: 0; border: 0; }
+		input, select, textarea{ font-size: 100%; vertical-align: middle; }
+		table{  border-collapse: collapse; border-spacing: 0; empty-cells: show; }
+		th{ text-align: left; }
+		#container { border: 1px solid #CDCDCD; margin: 50px auto 20px; width: 350px; background: #FFF; height: auto; }
+		#container div { padding: 20px; }
+		html, body { height: auto; }
+		body { font-family: Georgia, Arial, sans-serif; font-size: 13px; font-weight: 300; line-height: 1.62; background: #F2F2F2; color: #333; }
+		h1, h2, h3, h4, h5 { font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; font-weight: 700; line-height: 1.18; }
+		h2 { font-size: 18px; padding: 0 0 8px 0; }
+		h3 { font-size: 15px; padding: 0 0 8px; }
+		h4 { font-size: 13px; padding: 0 0 4px; }
+		h5 { font-size: 11px; font-family: "Lucida Grande", Arial, sans-serif; padding: 0 0 3px; }
+		p { padding: 0 0 8px 0; }
+		blockquote { font-style: italic; padding: 0 0 0 25px; }
+		ul { list-style: disc; }
+		ol { list-style-type: decimal; }
+		ul, ol { padding: 0 0 18px 18px; }
+		ol { padding-left: 24px; }
+		ul ul, ul ol, ol ul { padding-bottom: 0; }
+		small, span.mute { color: #808080; font-size: 11px; }
+		a:link, a:visited{ color: #D81921; text-decoration: none; border-bottom: 1px solid #CDCDCD; }
+		a:hover{ color: #161515; }
+		a:active{ color: red; }
+		.button { float: right; }
+		a.button:link,
+		a.button:visited{ background: #d81921; color: white; font-size: 11px; line-height: 1; font-family: Arial, sans-serif; font-weight: 700; text-decoration: none; padding: 3px 7px; white-space: nowrap; border: 1px solid white; -moz-border-radius: 4px; -webkit-border-radius: 4px; }
+		a.button:hover,
+		a.button:active,
+		a.button-selected:link, a.button-selected:visited{ background: red; }
+		a.button-disabled:link,
+		a.button-disabled:visited,
+		a.button-disabled:hover,
+		a.button-disabled:active{ background: #BEBEBE; cursor: default; }
+		a.bigbutton:link,
+		a.bigbutton:visited {
+			display: block;
+			line-height: 1;
+			text-align: center;
+
+			background: #D81921;
+			color: #FFF;
+			font-size: 14px;
+			font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+			font-weight: 700;
+			text-decoration: none;
+			padding: 4px 14px;
+			border: 2px solid white;
+
+			/* @inc .borderRadius6 */
+			border-radius: 6px;
+			-moz-border-radius: 6px;
+			-webkit-border-radius: 6px;
+		}
+		a.bigbutton:hover,
+		a.bigbutton:active,
+		a.bigbutton:focus { background: red; }
+		a.bigbutton-disabled:link,
+		a.bigbutton-disabled:visited,
+		a.bigbutton-disabled:hover,
+		a.bigbutton-disabled:active,
+		a.bigbutton-disabled:focus { background: #BEBEBE; }
+		.hidden { display: none; }
+	</style>
+
+	<!--[if IE 6]>
+	<style type="text/css" media="screen">
+		a.button span{ background: transparent url(/modules/core/layout/images/buttonbg.gif) no-repeat top right; float: left; padding: 0 7px 0 0; display: block; z-index: 3; }
+		a.button:link, a.button:visited{ background: transparent url(/modules/core/layout/images/buttonbg.gif) no-repeat top left; border: none; display: inline-block; line-height: 19px; cursor: pointer; padding: 0 0 0 7px; }
+		a.button:hover span, a.button:active span{ background: url(/modules/core/layout/images/buttonbg.gif) no-repeat right -19px; }
+		a.button:hover, a.button:active{ background: url(/modules/core/layout/images/buttonbg.gif) no-repeat 0 -19px; }
+		a.button-disabled:link, a.button-disabled:visited, a.button-disabled:hover, a.button-disabled:active{ background: transparent url(/modules/core/layout/images/buttonbg-disabled.gif) no-repeat top left; cursor: default; }
+		a.button-disabled:link span, a.button-disabled:visited span, a.button-disabled:hover span, a.button-disabled:active span{ background: transparent url(/modules/core/layout/images/buttonbg-disabled.gif) no-repeat top right; }
+	</style>
+	<![endif]-->
+	<!--[if IE 7]>
+	<style type="text/css" media="screen">
+		a.button span{ background: transparent url(/modules/core/layout/images/buttonbg.png) no-repeat top right; float: left; padding: 0 7px 0 0; display: block; z-index: 3; }
+		a.button:link, a.button:visited{ background: transparent url(/modules/core/layout/images/buttonbg.png) no-repeat top left; border: none; display: inline-block; line-height: 19px; cursor: pointer; padding: 0 0 0 7px; }
+		a.button:hover span, a.button:active span{ background: url(/modules/core/layout/images/buttonbg.png) no-repeat right -19px; }
+		a.button:hover, a.button:active{ background: url(/modules/core/layout/images/buttonbg.png) no-repeat 0 -19px; }
+		a.button-disabled:link, a.button-disabled:visited, a.button-disabled:hover, a.button-disabled:active{ background: transparent url(/modules/core/layout/images/buttonbg-disabled.png) no-repeat top left; cursor: default; }
+		a.button-disabled:link span, a.button-disabled:visited span, a.button-disabled:hover span, a.button-disabled:active span{ background: transparent url(/modules/core/layout/images/buttonbg-disabled.png) no-repeat top right; }
+	</style>
+	<![endif]-->
+
+	<script type="text/javascript" src="/modules/core/js/jquery/jquery-1.6.2.min.js"></script>
+	<script type="text/javascript" src="https://tickets.abconcerts.be/Iframe/esrojsapi.js"></script>
+	<script type="text/javascript" src="/modules/ticketing/js/esro.js"></script>
+	<script type="text/javascript" src="/modules/ticketing/js/ticketing.js"></script>
+
+	<script type="text/javascript">
+	$(document).ready(function()
+	{
+		$('a.tickets').live('click', addToBasketHandler);
+
+		function addToBasketHandler()
+		{
+			var self = $(this);
+			var eventID = self.attr('rel');
+			var amount = parseInt($('#ticketsAmount').val());
+
+			lastAction = 'add';
+			jsTicketing.addToBasket(eventID, amount, addToBasketSuccessHandler);
+		}
+
+		function addToBasketSuccessHandler(result)
+		{
+			var concert = result.content.concert;
+			var amount = concert.basket_amount
+			var title = concert.name;
+
+			var addedBox = $('#addedTickets');
+			var showMessageClass = (amount > 1) ? '.multiple' : '.one';
+			var messageBox = addedBox.find(showMessageClass);
+
+			var newText = messageBox.html().replace('\[amount\]', amount).replace('\[concert\]', title);
+
+			messageBox.html(newText);
+			$('.message').hide();
+			messageBox.show();
+
+			addedBox.show();
+		}
+	});
+	</script>
+</head>
+<body>
+	<div id="container">
+		<img src="/fail/images/ab-statuspage-header.png" width="350" height="143" alt="Ancienne Belgique" />
+		<div>
+			<p>Due to an anticipated peak moment in ticket sales, it is temporarily only possible to buy tickets for "<strong>The Scene</strong>"<br /><br />The rest of the website is currently unavailable but will be back online very soon.</p>
+		</div>
+		<div id="buyTickets">
+			<table cellspacing="0" cellpadding="0" id="concert-status">
+				<tr>
+					<td>
+						<div id="concert-price">
+							<p class="preorder-price">
+								<select id="ticketsAmount" name="amount">
+									<option>1</option><option>2</option><option>3</option><option>4</option>
+								</select>
+								x &euro; 24
+							</p>
+						</div>
+					</td>
+					<td>
+						<a class="bigbutton tickets" title="Koop tickets" rel="a1f3e1e6-f34a-48cf-aa56-4e9643583696" href="#"><span>Koop tickets</span></a>
+					</td>
+				</tr>
+			</table>
+
+			<div id="addedTickets" class="hidden">
+				<p class="message one hidden"><strong>1</strong> ticket voor <strong>[concert]</strong> is toegevoegd aan je winkelmandje.</p>
+				<p class="message multiple hidden"><strong>[amount]</strong> tickets voor <strong>[concert]</strong> zijn toegevoegd aan je winkelmandje.</p>
+				<p class="navigation">
+					<a class="button" href="/en/ticketing"><span>Checkout</span></a>
+				</p>
+			</div>
+
+			<script type="text/javascript">
+			// <![CDATA[
+			setConcertID(6112);
+			setTicketEventID('a1f3e1e6-f34a-48cf-aa56-4e9643583696');
+
+			getEventDescription();
+			</script>
+		</div>
+	</div>
+
+	<esro:frame href="" width="750" height="500" id="esroIframe" frameborder="no" backgroundtransparent="false" style="display: hidden;"></esro:frame>
+</body>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-1493529-2");
+pageTracker._setDomainName(".abconcerts.be");
+pageTracker._initData();
+pageTracker._trackPageview();
+} catch(err) {}</script>
+</html>
